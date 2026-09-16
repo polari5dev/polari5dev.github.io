@@ -2,6 +2,9 @@ body {
     font-family: 'Spleen 6x12';
     background-color: #080008;
     color: white;
+    margin-top: 50px;
+    margin-left: 10%;
+    font-size: x-large;
 }
 
 h1 {
@@ -12,4 +15,23 @@ h1 {
 em {
     color: #8e8;
     text-shadow: 0 0 5px color;
+}
+
+a {
+    color: #98c;
+    text-shadow: 0 0 10px color;
+}
+
+.div1 {
+    flex: 1;
+    float: left;
+    width: 70%;
+    align-content: center;
+}
+
+.div2 {
+    flex: 2;
+    float: left;
+    width: 20%;
+    align-content: center;
 }
