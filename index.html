@@ -7,18 +7,28 @@
     </title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 
-<body>
-    <div class="div1">
-        <h1>
-            Welcome, <span class="colshift">User</span>.
-        </h1>
+<body onload="startTime()">
+    <div class="topbar">
+        <p>Welcome, <span class="colshift">User</span>. The time is...</p>
 
-        <em>
-            ts be glowing like a geometry dash level
-        </em>
+        <div class="clock">
+            <span id="hours" class="hours">00</span>
+            <span class="separator">:</span>
+            <span id="minutes" class="minutes">00</span>
+            <span class="separator">:</span>
+            <span id="seconds" class="seconds">00</span>
+            <span class="separator">.</span>
+            <span id="milliseconds" class="milliseconds">000</span>
+        </div>
+        <script src="clock.js"></script>
+    </div>
+
+    <div class="div1">
+        <h1>Left Text</h1>
     </div>
 
     <div class="div2">
@@ -41,6 +51,7 @@
             [email]
         </a>
     </div>
+
 </body>
 
 </html>

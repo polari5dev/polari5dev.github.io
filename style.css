@@ -2,12 +2,12 @@ body {
     font-family: 'Spleen 6x12';
     background-color: #080008;
     color: white;
-    margin-top: 50px;
-    margin-left: 10%;
+    margin: 0;
     font-size: x-large;
 }
 
 h1 {
+    margin-left: 20px;
     color: #767;
     text-shadow: 0px 0px 10px #767;
 }
@@ -27,6 +27,8 @@ br {
     margin-bottom: 20px;
 }
 
+
+
 .div1 {
     flex: 1;
     float: left;
@@ -41,6 +43,21 @@ br {
     align-content: center;
 }
 
+.topbar {
+    background-color: #222;
+    color: #eee;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topbar p,
+.topbar div {
+    margin: 0;
+    text-shadow: 0 0 10px white;
+}
+
 .colshift {
     color: #f00;
     text-shadow: 0 0 25px #f00;
@@ -48,7 +65,6 @@ br {
 
 }
 
-/* 2. Create the keyframes that rotate the color wheel a full 360 degrees */
 @keyframes hueShift {
     0% {
         filter: hue-rotate(0deg);
