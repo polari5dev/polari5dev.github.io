@@ -14,12 +14,17 @@ h1 {
 
 em {
     color: #8e8;
-    text-shadow: 0 0 5px color;
+    text-shadow: 0 0 7px #8e8;
 }
 
 a {
     color: #98c;
-    text-shadow: 0 0 10px color;
+    text-shadow: 0 0 7px #98c;
+    text-decoration: none;
+}
+
+br {
+    margin-bottom: 20px;
 }
 
 .div1 {
@@ -34,4 +39,22 @@ a {
     float: left;
     width: 20%;
     align-content: center;
+}
+
+.colshift {
+    color: #f00;
+    text-shadow: 0 0 25px #f00;
+    animation: hueShift 3s linear infinite;
+
+}
+
+/* 2. Create the keyframes that rotate the color wheel a full 360 degrees */
+@keyframes hueShift {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
